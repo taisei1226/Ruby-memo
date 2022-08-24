@@ -15,7 +15,7 @@ if memo_number == "1"
 
 	CSV.open("#{memo_file}.csv" , "w") do |csv|
 	　csv.puts ["#{memo}"]
-        end
+end
 elsif memo_number == "2"
 	puts "拡張子を除いた既存ファイル名を入力してください。"
 	file_name = gets.chomp
@@ -25,7 +25,7 @@ elsif memo_number == "2"
 
 	CSV.open("#{file_name}.csv","a") do |csv|
 	　csv.puts ["#{memo}"]
-        end
+end
 else
 	puts "1または2を入力してください"
 end
